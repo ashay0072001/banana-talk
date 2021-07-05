@@ -18,8 +18,12 @@
             text-shadow: brown;
             color: white;
             font-size: 2rem;
-            width: 80%;
+            width: 50%;
             font-family: 'Zen Tokyo Zoo', cursive;
+            float: right;
+    
+    margin-right: 244px;
+    margin-top: 20px;
 
         }
 
@@ -33,7 +37,7 @@
 
             margin: 0;
             font-family: 'Kalam', cursive;
-            padding-bottom:rem;
+            padding-bottom: rem;
             padding: 1rem 26rem;
             font-size: 2rem;
             font-family: 'Zen Tokyo Zoo', cursive;
@@ -82,6 +86,7 @@
             font-size: 2rem;
             width: 20rem;
             height: 5rem;
+            margin-top:20px;
         }
 
         .text {
@@ -97,14 +102,14 @@
             padding: 1rem 2rem;
             color: green;
             height: 3rem;
-            padding-bottom:10rem;
+            padding-bottom: 10rem;
             font-family: 'Zen Tokyo Zoo', cursive;
 
         }
 
         .aboutChange {
             text-align: center;
-            font-size:2rem;
+            font-size: 2rem;
             font-family: 'Zen Tokyo Zoo', cursive;
 
 
@@ -117,25 +122,40 @@
         }
 
         footer {
-            background-color: #171717 ;
-            padding:0rem;
+            background-color: #171717;
+            padding: 0rem;
 
             text-align: center;
             color: white;
             border-bottom-right-radius: 1rem;
             font-family: 'Zen Tokyo Zoo', cursive;
         }
-        .image{
-            
+
+        .image {
+
             width: 500px;
             padding-left: 60px;
 
         }
-        .imagebe{
-            width:500px;
-             padding-left: 40px;
+
+        .imagebe {
+            width: 500px;
+            padding-left: 40px;
         }
 
+
+        .column {
+            float: left;
+            width: 32.33%;
+            padding: 5px;
+        }
+
+        /* Clear floats after image containers */
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
 
 
 
@@ -154,12 +174,19 @@
     </nav>
 
 <body>
-    <img class="image" src="images/JuJ6uTE-minions-wallpaper.jpg" />
-    <img class="image" src="images/88hj0vK-minions-wallpaper.jpg" />
-    <img class="imagebe" src="images/wp2557220-wallpaper-minion.jpg" />
-    <div class="textPlay">
-        <textarea id="text-Reader" placeholder="type your text here to convert it to banana language"></textarea>
+    <div class="row">
+        <div class="column">
+            <img src="images/JuJ6uTE-minions-wallpaper.jpg" alt="Snow" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="images/88hj0vK-minions-wallpaper.jpg" alt="Forest" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="images/wp2557220-wallpaper-minion.jpg" alt="Mountains" style="width:100%">
+        </div>
     </div>
+    <textarea id="text-Reader" placeholder="type your text here to convert it to banana language"></textarea>
+   
     <div class="button">
         <button id="btn-response">Translate to banana</button>
     </div>
