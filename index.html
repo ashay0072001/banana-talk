@@ -21,9 +21,9 @@
             width: 50%;
             font-family: 'Zen Tokyo Zoo', cursive;
             float: right;
-    
-    margin-right: 244px;
-    margin-top: 20px;
+
+            margin-right: 300px;
+            margin-top: 20px;
 
         }
 
@@ -38,7 +38,7 @@
             margin: 0;
             font-family: 'Kalam', cursive;
             padding-bottom: rem;
-            padding: 1rem 26rem;
+            padding: 1rem 30rem;
             font-size: 2rem;
             font-family: 'Zen Tokyo Zoo', cursive;
         }
@@ -76,7 +76,7 @@
 
 
         .button {
-            padding-left: 26rem;
+            padding-left: 30rem;
 
 
         }
@@ -86,12 +86,12 @@
             font-size: 2rem;
             width: 20rem;
             height: 5rem;
-            margin-top:20px;
+            margin-top: 20px;
         }
 
         .text {
             font-size: 2rem;
-            padding-left: 26rem;
+            padding-left: 30rem;
         }
 
         #btn-response {
@@ -157,6 +157,26 @@
             display: table;
         }
 
+        .card {
+            /* Add shadows to create the "card" effect */
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+        }
+
+        /* On mouse-over, add a deeper shadow */
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        /* Add some padding inside the card container */
+        .container {
+            padding: 2px 16px;
+        }
+
+        .video {
+            padding-bottom:3rem;
+        }
+
 
 
 
@@ -180,25 +200,33 @@
         </div>
         <div class="column">
             <img src="images/88hj0vK-minions-wallpaper.jpg" alt="Forest" style="width:100%">
-        </div>
+        </div> 
         <div class="column">
             <img src="images/wp2557220-wallpaper-minion.jpg" alt="Mountains" style="width:100%">
         </div>
     </div>
     <textarea id="text-Reader" placeholder="type your text here to convert it to banana language"></textarea>
-   
+
     <div class="button">
         <button id="btn-response">Translate to banana</button>
     </div>
+
     <div class="text">Output will come here 👇 </div>
     <div class=".outputarrangement">
         <div id="Output"></div>
     </div>
+    
+
+
+
+
+
 
     <footer>
         <h1 class="aboutC">about</h1>
         <p class="aboutChange">Are you a fan of minions? Did you know that the gibberish they say is an actual<br>
-            language. Use the translator to convert your text from English to Minion speak or<br> Banana language.</p>
+            language. Use the translator to convert your text from English to Minion speak or<br> Banana language.
+        </p>
     </footer>
 
 
